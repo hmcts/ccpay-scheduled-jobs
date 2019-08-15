@@ -31,7 +31,7 @@ public class JobProcessorApplication {
         LOG.error("baseURL--------"+baseURL+
                 "jobType"+jobType+
                 "s2sToken"+s2sToken);
-        System.out.println("baseURL--------"+baseURL+
+        System.out.println("baseURL----------"+baseURL+
                 "jobType"+jobType+
                 "s2sToken"+s2sToken);
         JobProcessor jobProcessor =  jobProcessorFactory.getJobType(jobType);
