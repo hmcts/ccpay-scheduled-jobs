@@ -10,6 +10,10 @@ public class JobProcessorFactory {
             return new StatusUpdateProcessor();
 
         }
+        if(jobType.equalsIgnoreCase("dead-letter-queue-process")){
+            return new DeadLetterQueueProcessor();
+
+        }
         if(jobType.equalsIgnoreCase("bar-csv-report")){
             return new BarCsvReportProcessor();
 
@@ -24,6 +28,14 @@ public class JobProcessorFactory {
         }
         if(jobType.equalsIgnoreCase("pba-finrem-weekly-csv-report")){
             return new PbaFinremWeeklyCsvReportProcessor();
+
+        }
+        if(jobType.equalsIgnoreCase("refund-approved-update-process")){
+            return new RefundApprovedUpdateProcessor();
+
+        }
+        if(jobType.equalsIgnoreCase("refund-notification-update-process")){
+            return new RefundNotificationUpdateProcessor();
 
         }
         return null;
