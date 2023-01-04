@@ -23,6 +23,7 @@
     <suppress until="2023-03-31">
         <notes>Transitive dependency of spring boot version</notes>
         <cve>CVE-2020-5421</cve>
+
     </suppress>
     <suppress until="2023-03-31">
         <notes>Fix until the import for logback are updated</notes>
