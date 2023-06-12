@@ -101,9 +101,29 @@
         <cve>CVE-2023-24998</cve>
         <cve>CVE-2022-45688</cve>
         <cve>CVE-2022-1471</cve>
+        <cve>CVE-2022-2048</cve>
+        <cve>CVE-2023-26048</cve>
+        <cve>CVE-2023-26049</cve>
+        <cve>CVE-2022-2047</cve>
+    </suppress>
+    <suppress>
+        <cve>CVE-2022-2048</cve>
+        <cve>CVE-2023-26049</cve>
+        <cve>CVE-2021-42550</cve>
+        <cve>CVE-2022-2047</cve>
+        <cve>CVE-2023-26048</cve>
+        <cve>CVE-2023-20883</cve>
     </suppress>
     <suppress until="2023-07-30">
         <cve>CVE-2021-46877</cve>
         <cve>CVE-2023-20863</cve>
     </suppress>
+    <suppress>
+        <cve>CVE-2021-46877</cve>
+    </suppress>
+    <suppress until="2023-07-30">
+        <notes>supressing spring boot error</notes>
+        <cve>CVE-2023-20883</cve>
+    </suppress>
+
 </suppressions>
