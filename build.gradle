@@ -84,7 +84,7 @@ configurations.all {
 }
 
 dependencies {
-    implementation group: 'io.rest-assured', name: 'rest-assured', version: '4.5.1'
+    implementation group: 'io.rest-assured', name: 'rest-assured', version: '5.4.0'
 
     implementation(group: 'uk.gov.hmcts.reform', name: 'service-auth-provider-client', version: '4.0.0') {
         exclude group: 'com.google.guava', module: 'guava'
