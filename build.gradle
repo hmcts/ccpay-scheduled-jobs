@@ -57,7 +57,7 @@ dependencies {
     implementation group: 'org.json', name: 'json', version: '20250517'
 
     testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '3.5.5'
-    testImplementation 'org.wiremock:wiremock:3.13.1'
+    testImplementation 'org.wiremock:wiremock:3.13.2'
     testImplementation 'com.github.hmcts:fortify-client:1.4.10:all'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
