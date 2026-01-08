@@ -13,8 +13,6 @@ public class StatusUpdateProcessor implements JobProcessor {
     private final Map<String, String> headers = new HashMap<>();
     @Override
     public void process(String serviceToken, String baseURL) {
-
-        LOG.info("Value in StatusUpdateProcessor-----"+"BaseURL--------"+baseURL);
         headers.put("ServiceAuthorization", serviceToken);
         RestAssured.given().relaxedHTTPSValidation()
                 .baseUri(baseURL)
