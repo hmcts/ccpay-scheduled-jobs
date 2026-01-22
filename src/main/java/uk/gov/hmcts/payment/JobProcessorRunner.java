@@ -11,10 +11,12 @@ public class JobProcessorRunner {
     
     public static void run(JobProcessorConfiguration configuration) {
         String s2sToken = new S2SHelper(configuration).generateToken();
+        LOG.debug("S2S Token generated");
         String reportName = configuration.getReportName();
         String payUrl = configuration.getPayUrl();
         String refundsUrl = configuration.getRefundsUrl();
         LOG.info("report name {}",reportName);
+        LOG.debug("refundsUrl {}",refundsUrl);
         if(! reportName.equalsIgnoreCase("refund-notifications-job")) {
             LOG.info("Job {} started, Url: {}", reportName, payUrl);
             new JobProcessorFactory().getJobType(reportName).process(s2sToken, payUrl);
