@@ -19,7 +19,7 @@ public class RefundNotificationUpdateProcessor implements JobProcessor {
         RestAssured.given().relaxedHTTPSValidation()
                 .baseUri(baseURL)
                 .contentType(ContentType.JSON)
-                .headers(headers
+                .headers(headers)
                 .patch("/jobs/refund-notification-update");
     }
 }
