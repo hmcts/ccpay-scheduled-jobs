@@ -13,12 +13,13 @@ public class RefundNotificationUpdateProcessor implements JobProcessor {
     private final Map<String, String> headers = new HashMap<>();
     @Override
     public void process(String serviceToken, String baseURL) {
-        LOG.debug("Value in Refund Notification Update Processor-----"+"BaseURL--------"+baseURL);
+
+        LOG.debug("Value in Refund Notification Update Processor-----BaseURL--------{}", baseURL);
         headers.put("ServiceAuthorization", serviceToken);
         RestAssured.given().relaxedHTTPSValidation()
                 .baseUri(baseURL)
                 .contentType(ContentType.JSON)
-                .headers(headers)
+                .headers(headers
                 .patch("/jobs/refund-notification-update");
     }
 }
