@@ -14,7 +14,7 @@ public class UnprocessedPaymentUpdateProcessor implements JobProcessor {
 
     @Override
     public void process(String serviceToken, String baseURL) {
-        LOG.debug("Value in UnprocessedPaymentUpdateProcessor-----:{}",baseURL); //NOSONAR
+        LOG.debug("Value in UnprocessedPaymentUpdateProcessor-----:{}",baseURL);
         headers.put("ServiceAuthorization", serviceToken);
         RestAssured.given().relaxedHTTPSValidation()
                 .baseUri(baseURL)
