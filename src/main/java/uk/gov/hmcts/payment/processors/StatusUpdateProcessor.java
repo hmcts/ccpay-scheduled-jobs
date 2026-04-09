@@ -14,7 +14,7 @@ public class StatusUpdateProcessor implements JobProcessor {
     @Override
     public void process(String serviceToken, String baseURL) {
 
-        LOG.info("Value in StatusUpdateProcessor-----"+"BaseURL--------"+baseURL);
+        LOG.debug("Value in StatusUpdateProcessor-----BaseURL--------{}", baseURL);
         headers.put("ServiceAuthorization", serviceToken);
         RestAssured.given().relaxedHTTPSValidation()
                 .baseUri(baseURL)
