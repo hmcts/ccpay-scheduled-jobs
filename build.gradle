@@ -51,13 +51,13 @@ dependencies {
     implementation 'com.github.hmcts:service-auth-provider-java-client:5.3.3'
     implementation 'org.bouncycastle:bcprov-jdk18on:1.84'
     implementation 'com.github.hmcts.java-logging:logging:8.0.0'
-    implementation 'org.springframework.boot:spring-boot-starter-actuator:3.5.13'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator:3.5.14'
     implementation 'org.springframework.cloud:spring-cloud-starter-openfeign:4.3.2'
     implementation 'io.github.openfeign:feign-jackson:13.12'
     implementation 'org.json:json:20250517'
     implementation 'org.apache.logging.log4j:log4j-to-slf4j:2.25.4'
 
-    testImplementation 'org.springframework.boot:spring-boot-starter-test:3.5.5'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test:3.5.14'
     testImplementation 'org.wiremock:wiremock:3.13.2'
     testImplementation 'com.github.hmcts:fortify-client:1.4.10:all'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
@@ -66,7 +66,7 @@ dependencies {
 dependencyManagement {
     imports {
         /* address CVE-2025-41234, CVE-2026-22735 and CVE-2026-22737 */
-        mavenBom "org.springframework:spring-framework-bom:6.2.17"
+        mavenBom "org.springframework:spring-framework-bom:6.2.18"
         /* CVE-2026-22748, CVE-2026-22746 */
         mavenBom "org.springframework.security:spring-security-bom:6.5.10"
     }
@@ -110,6 +110,8 @@ dependencyCheck {
   // range of 0-10 fails the build, anything greater and it doesn't fail the build
   failBuildOnCVSS = System.getProperty('dependencyCheck.failBuild') == 'true' ? 0 : 11
   suppressionFile = 'config/owasp/suppressions.xml'
+  outputDirectory = layout.buildDirectory.dir('reports/dependency-check').get().asFile.toString()
+  formats = ['HTML', 'XML', 'JSON']
 
   analyzers {
     // Disable scanning of .NET related binaries
