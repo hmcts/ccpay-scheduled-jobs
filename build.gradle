@@ -55,7 +55,7 @@ dependencies {
     implementation 'org.springframework.cloud:spring-cloud-starter-openfeign:4.3.2'
     implementation 'io.github.openfeign:feign-jackson:13.12'
     implementation 'org.json:json:20250517'
-    implementation 'org.apache.logging.log4j:log4j-to-slf4j:2.25.4'
+    implementation 'org.apache.logging.log4j:log4j-to-slf4j:2.26.0'
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test:3.5.14'
     testImplementation 'org.wiremock:wiremock:3.13.2'
