@@ -48,7 +48,7 @@ configurations.configureEach {
 
 dependencies {
     implementation 'io.rest-assured:rest-assured:5.5.7'
-    implementation 'com.github.hmcts:service-auth-provider-java-client:5.3.3'
+    implementation 'com.github.hmcts:service-auth-provider-java-client:5.3.4'
     implementation 'org.bouncycastle:bcprov-jdk18on:1.84'
     implementation 'com.github.hmcts.java-logging:logging:8.0.0'
     implementation 'org.springframework.boot:spring-boot-starter-actuator:3.5.14'
