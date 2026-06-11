@@ -42,6 +42,11 @@ configurations.configureEach {
             if (det.requested.group == 'org.apache.commons' && det.requested.name == 'commons-lang3') {
                 det.useVersion '3.18.0'
             }
+            /* CVEs: CVE-2026-41842, CVE-2026-41850, CVE-2026-41851, CVE-2026-41840, CVE-2026-41841, CVE-2026-41843
+            Force Spring framework modules to 6.2.19 */
+            if (det.requested.group == 'org.springframework' && det.requested.name in ['spring-beans', 'spring-context', 'spring-core', 'spring-expression', 'spring-jcl','spring-aop']) {
+                det.useVersion '6.2.19'
+            }
         }
     }
 }
