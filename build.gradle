@@ -47,6 +47,20 @@ configurations.configureEach {
             if (det.requested.group == 'org.springframework' && det.requested.name in ['spring-beans', 'spring-context', 'spring-core', 'spring-expression', 'spring-jcl','spring-aop']) {
                 det.useVersion '6.2.19'
             }
+
+            /*
+                CVE-2026-40988, CVE-2026-41003, CVE-2026-41694
+                Force Spring Security modules to a patched 6.5.11
+            */
+            def springSecurityModules = [
+                    'spring-security-core',
+                    'spring-security-web',
+                    'spring-security-config',
+                    'spring-security-crypto'
+            ]
+            if (det.requested.group == 'org.springframework.security' && springSecurityModules.contains(det.requested.name)) {
+                det.useVersion '6.5.11'
+            }
         }
     }
 }
