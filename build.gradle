@@ -61,6 +61,15 @@ configurations.configureEach {
             if (det.requested.group == 'org.springframework.security' && springSecurityModules.contains(det.requested.name)) {
                 det.useVersion '6.5.11'
             }
+
+            /*
+            * CVE-2026-41842
+            * */
+            if (det.requested.name == 'jackson-databind' ||
+                    det.requested.name == 'jackson-core' ||
+                    det.requested.name == 'jackson-annotations') {
+                det.useVersion '2.22.1'
+            }
         }
     }
 }
