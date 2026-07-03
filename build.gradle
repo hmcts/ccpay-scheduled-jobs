@@ -66,7 +66,7 @@ configurations.configureEach {
             * CVE-2026-41842
             * */
             if (det.requested.group == 'com.fasterxml.jackson.core' && det.requested.name in ['jackson-databind', 'jackson-core']) {
-                det.useVersion '2.22.0'
+                det.useVersion '3.2.0'
             }
         }
     }
