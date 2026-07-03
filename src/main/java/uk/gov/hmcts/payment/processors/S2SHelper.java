@@ -1,6 +1,6 @@
 package uk.gov.hmcts.payment.processors;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
+import tools.jackson.databind.ObjectMapper;
 import feign.Feign;
 import feign.codec.StringDecoder;
 import org.springframework.beans.factory.ObjectFactory;
