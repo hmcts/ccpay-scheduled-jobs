@@ -61,6 +61,14 @@ configurations.configureEach {
             if (det.requested.group == 'org.springframework.security' && springSecurityModules.contains(det.requested.name)) {
                 det.useVersion '6.5.11'
             }
+
+            /*
+            * CVE-2026-41842
+            * */
+            if ((det.requested.group == 'com.fasterxml.jackson.core' || det.requested.group == 'tools.jackson.core') && det.requested.name in ['jackson-databind', 'jackson-core']) {
+                // force to use tools.jackson.core artifacts at 3.2.0
+                det.useTarget "tools.jackson.core:${det.requested.name}:3.2.0"
+            }
         }
     }
 }
@@ -73,6 +81,8 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-actuator:3.5.15'
     implementation 'org.springframework.cloud:spring-cloud-starter-openfeign:4.3.3'
     implementation 'io.github.openfeign:feign-jackson:13.13'
+    implementation 'tools.jackson.core:jackson-core:3.2.0'
+    implementation 'tools.jackson.core:jackson-databind:3.2.0'
     implementation 'org.json:json:20250517'
     implementation 'org.apache.logging.log4j:log4j-to-slf4j:2.26.0'
 
