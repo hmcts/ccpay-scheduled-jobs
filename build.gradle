@@ -61,6 +61,17 @@ configurations.configureEach {
             if (det.requested.group == 'org.springframework.security' && springSecurityModules.contains(det.requested.name)) {
                 det.useVersion '6.5.11'
             }
+
+            /* CVE-2026-54399, CVE-2026-54428
+Upgrade the Apache HttpComponents 5 stack coherently so httpclient5
+resolves against patched httpcore5 / httpcore5-h2 versions. */
+            if (det.requested.group == 'org.apache.httpcomponents.client5' && det.requested.name == 'httpclient5') {
+                det.useVersion '5.6.2'
+            }
+            if (det.requested.group == 'org.apache.httpcomponents.core5'
+                    && ['httpcore5', 'httpcore5-h2'].contains(det.requested.name)) {
+                det.useVersion '5.4.3'
+            }
         }
     }
 }
