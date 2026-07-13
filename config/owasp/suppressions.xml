@@ -9,5 +9,18 @@
             Therefore, we will suppress this CVE for now.
         </notes>
         <cve>CVE-2026-54515</cve>
+        <cve>CVE-2026-54512</cve>
+        <cve>CVE-2026-54513</cve>
+        <cve>CVE-2026-54514</cve>
+        <cve>CVE-2026-54516</cve>
+        <cve>CVE-2026-54517</cve>
+        <notes>
+            Uncontrolled Resource Consumption vulnerability in the HTTP/1.1 message parser in Apache HttpComponents Core
+            (5.4.2 and earlier, 5.5-beta1 and earlier) allows an remote attacker to cause a denial of service through memory
+            exhaustion by sending messages with excessive number of headers / excessive header length.
+            Not fixed in any current build, therefore will need to be suppressed until a fix is available.
+        </notes>
+        <cve>CVE-2026-54399</cve>
+        <cve>CVE-2026-54428</cve>
     </suppress>
 </suppressions>
