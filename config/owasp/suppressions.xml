@@ -10,4 +10,14 @@
         </notes>
         <cve>CVE-2026-54515</cve>
     </suppress>
+
+    <suppress>
+        <notes>
+            Suppress httpcore 4.4.16 findings identified by dependency scanning for pkg:maven/org.apache.httpcomponents/httpcore@4.4.16.
+        </notes>
+        <packageUrl regex="true">^pkg:maven/org\.apache\.httpcomponents/httpcore@4\.4\.16$</packageUrl>
+        <cpe>cpe:2.3:a:apache:httpcomponents_core:4.4.16:*:*:*:*:*:*:*</cpe>
+        <cve>CVE-2026-54399</cve>
+        <cve>CVE-2026-54428</cve>
+    </suppress>
 </suppressions>
