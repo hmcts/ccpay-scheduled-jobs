@@ -62,9 +62,11 @@ configurations.configureEach {
                 det.useVersion '6.5.11'
             }
 
-            /* CVE-2026-54399, CVE-2026-54428
-Upgrade the Apache HttpComponents 5 stack coherently so httpclient5
-resolves against patched httpcore5 / httpcore5-h2 versions. */
+            /*
+                CVE-2026-54399, CVE-2026-54428
+                Upgrade the Apache HttpComponents 5 stack coherently so httpclient5
+                resolves against patched httpcore5 / httpcore5-h2 versions.
+            */
             if (det.requested.group == 'org.apache.httpcomponents.client5' && det.requested.name == 'httpclient5') {
                 det.useVersion '5.6.2'
             }
@@ -77,7 +79,7 @@ resolves against patched httpcore5 / httpcore5-h2 versions. */
 }
 
 dependencies {
-    implementation 'io.rest-assured:rest-assured:5.5.7'
+    implementation 'io.rest-assured:rest-assured:6.0.0'
     implementation 'com.github.hmcts:service-auth-provider-java-client:5.3.4'
     implementation 'org.bouncycastle:bcprov-jdk18on:1.84'
     implementation 'com.github.hmcts.java-logging:logging:8.0.0'
