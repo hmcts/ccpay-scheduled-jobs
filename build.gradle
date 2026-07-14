@@ -64,6 +64,18 @@ configurations.configureEach {
 
             /*
                 CVE-2026-54399, CVE-2026-54428
+                Rest Assured still pulls the legacy Apache HttpComponents 4 stack.
+                Upgrade it coherently so httpclient/httpmime resolve against patched httpcore.
+            */
+            if (det.requested.group == 'org.apache.httpcomponents' && det.requested.name in ['httpclient', 'httpmime']) {
+                det.useVersion '4.5.14'
+            }
+            if (det.requested.group == 'org.apache.httpcomponents' && det.requested.name == 'httpcore') {
+                det.useVersion '4.4.16'
+            }
+
+            /*
+                CVE-2026-54399, CVE-2026-54428
                 Upgrade the Apache HttpComponents 5 stack coherently so httpclient5
                 resolves against patched httpcore5 / httpcore5-h2 versions.
             */
