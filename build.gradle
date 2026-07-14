@@ -61,6 +61,17 @@ configurations.configureEach {
             if (det.requested.group == 'org.springframework.security' && springSecurityModules.contains(det.requested.name)) {
                 det.useVersion '6.5.11'
             }
+
+            /*
+                CVE-2026-54399, CVE-2026-54428
+                Force Apache HttpComponents 4.x modules to patched compatible versions
+            */
+            if (det.requested.group == 'org.apache.httpcomponents' && det.requested.name == 'httpcore') {
+                det.useVersion '4.4.16'
+            }
+            if (det.requested.group == 'org.apache.httpcomponents' && det.requested.name in ['httpclient', 'httpmime']) {
+                det.useVersion '4.5.14'
+            }
         }
     }
 }
