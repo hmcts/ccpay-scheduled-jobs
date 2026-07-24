@@ -27,6 +27,10 @@ repositories {
 
 
 configurations.configureEach {
+    exclude group: 'org.apache.httpcomponents', module: 'httpclient'
+    exclude group: 'org.apache.httpcomponents', module: 'httpcore'
+    exclude group: 'org.apache.httpcomponents', module: 'httpmime'
+
     resolutionStrategy {
         eachDependency { DependencyResolveDetails det ->
             /* JAR upgrades with latest versions for CVE fixes*/
@@ -64,20 +68,23 @@ configurations.configureEach {
 
             /*
                 CVE-2026-54399, CVE-2026-54428
-                Force Apache HttpComponents 4.x modules to patched compatible versions
+                Upgrade the Apache HttpComponents 5 stack coherently so httpclient5
+                resolves against patched httpcore5 / httpcore5-h2 versions.
             */
-            if (det.requested.group == 'org.apache.httpcomponents' && det.requested.name == 'httpcore') {
-                det.useVersion '4.4.16'
+            if (det.requested.group == 'org.apache.httpcomponents.client5' && det.requested.name == 'httpclient5') {
+                det.useVersion '5.6.2'
             }
-            if (det.requested.group == 'org.apache.httpcomponents' && det.requested.name in ['httpclient', 'httpmime']) {
-                det.useVersion '4.5.14'
+            if (det.requested.group == 'org.apache.httpcomponents.core5'
+                    && ['httpcore5', 'httpcore5-h2'].contains(det.requested.name)) {
+                det.useVersion '5.4.3'
             }
         }
     }
 }
 
 dependencies {
-    implementation 'io.rest-assured:rest-assured:5.5.7'
+    implementation 'org.apache.httpcomponents.client5:httpclient5:5.6.2'
+    implementation 'org.apache.httpcomponents.core5:httpcore5:5.4.3'
     implementation 'com.github.hmcts:service-auth-provider-java-client:5.3.4'
     implementation 'org.bouncycastle:bcprov-jdk18on:1.85'
     implementation 'com.github.hmcts.java-logging:logging:8.0.0'
