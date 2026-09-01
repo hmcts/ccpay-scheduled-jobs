@@ -20,4 +20,60 @@
         <cve>CVE-2026-54399</cve>
         <cve>CVE-2026-54428</cve>
     </suppress>
+    <suppress until="2026-10-31Z">
+        <notes>
+            CVE-2026-59313 and CVE-2026-59314 affects Spring framework 6.2.19 which is the latest release.
+        </notes>
+        <packageUrl regex="true">^pkg:maven/org\.springframework/spring-aop@6\.2\.19$</packageUrl>
+        <cve>CVE-2026-59313</cve>
+        <cve>CVE-2026-59314</cve>
+    </suppress>
+    <suppress until="2026-10-31Z">
+        <notes>
+            CVE-2026-59313 and CVE-2026-59314 affects Spring framework 6.2.19 which is the latest release.
+        </notes>
+        <packageUrl regex="true">^pkg:maven/org\.springframework/spring-beans@6\.2\.19$</packageUrl>
+        <cve>CVE-2026-59313</cve>
+        <cve>CVE-2026-59314</cve>
+    </suppress>
+    <suppress until="2026-10-31Z">
+        <notes>
+            CVE-2026-59313 and CVE-2026-59314 affects Spring framework 6.2.19 which is the latest release.
+        </notes>
+        <packageUrl regex="true">^pkg:maven/org\.springframework/spring-context@6\.2\.19$</packageUrl>
+        <cve>CVE-2026-59313</cve>
+        <cve>CVE-2026-59314</cve>
+    </suppress>
+    <suppress until="2026-10-31Z">
+        <notes>
+            CVE-2026-59313 and CVE-2026-59314 affects Spring framework 6.2.19 which is the latest release.
+        </notes>
+        <packageUrl regex="true">^pkg:maven/org\.springframework/spring-core@6\.2\.19$</packageUrl>
+        <cve>CVE-2026-59313</cve>
+        <cve>CVE-2026-59314</cve>
+    </suppress>
+    <suppress until="2026-10-31Z">
+        <notes>
+            CVE-2026-59313 and CVE-2026-59314 affects Spring framework 6.2.19 which is the latest release.
+        </notes>
+        <packageUrl regex="true">^pkg:maven/org\.springframework/spring-expression@6\.2\.19$</packageUrl>
+        <cve>CVE-2026-59313</cve>
+        <cve>CVE-2026-59314</cve>
+    </suppress>
+    <suppress until="2026-10-31Z">
+        <notes>
+            CVE-2026-59313 and CVE-2026-59314 affects Spring framework 6.2.19 which is the latest release.
+        </notes>
+        <packageUrl regex="true">^pkg:maven/org\.springframework/spring-jcl@6\.2\.19$</packageUrl>
+        <cve>CVE-2026-59313</cve>
+        <cve>CVE-2026-59314</cve>
+    </suppress>
+    <suppress until="2026-10-31Z">
+        <notes>
+            CVE-2026-59313 and CVE-2026-59314 affects Spring framework 6.2.19 which is the latest release.
+        </notes>
+        <packageUrl regex="true">^pkg:maven/org\.springframework/spring-web@6\.2\.19$</packageUrl>
+        <cve>CVE-2026-59313</cve>
+        <cve>CVE-2026-59314</cve>
+    </suppress>
 </suppressions>
