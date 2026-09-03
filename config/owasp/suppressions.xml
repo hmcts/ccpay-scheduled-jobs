@@ -22,7 +22,7 @@
     </suppress>
     <suppress until="2026-10-31Z">
         <notes>
-            CVE-2026-59313,CVE-2026-59314,CVE-2026-47892,CVE-2026-59283,CVE-2026-47893,CVE-2026-59280
+            CVE-2026-59313,CVE-2026-59314,CVE-2026-47892,CVE-2026-59283,CVE-2026-47893,CVE-2026-59280,CVE-2026-47890,CVE-2026-47891
             affects Spring framework 6.2.19 which is the latest release.
         </notes>
         <packageUrl regex="true">^pkg:maven/org\.springframework/spring-aop@6\.2\.19$</packageUrl>
@@ -32,10 +32,12 @@
         <cve>CVE-2026-59283</cve>
         <cve>CVE-2026-47893</cve>
         <cve>CVE-2026-59280</cve>
+        <cve>CVE-2026-47890</cve>
+        <cve>CVE-2026-47891</cve>
     </suppress>
     <suppress until="2026-10-31Z">
         <notes>
-            CVE-2026-59313,CVE-2026-59314,CVE-2026-47892,CVE-2026-59283,CVE-2026-47893,CVE-2026-59280
+            CVE-2026-59313,CVE-2026-59314,CVE-2026-47892,CVE-2026-59283,CVE-2026-47893,CVE-2026-59280,CVE-2026-47890,CVE-2026-47891
             affects Spring framework 6.2.19 which is the latest release.
         </notes>
         <packageUrl regex="true">^pkg:maven/org\.springframework/spring-beans@6\.2\.19$</packageUrl>
@@ -45,10 +47,12 @@
         <cve>CVE-2026-59283</cve>
         <cve>CVE-2026-47893</cve>
         <cve>CVE-2026-59280</cve>
+        <cve>CVE-2026-47890</cve>
+        <cve>CVE-2026-47891</cve>
     </suppress>
     <suppress until="2026-10-31Z">
         <notes>
-            CVE-2026-59313,CVE-2026-59314,CVE-2026-47892,CVE-2026-59283,CVE-2026-47893,CVE-2026-59280
+            CVE-2026-59313,CVE-2026-59314,CVE-2026-47892,CVE-2026-59283,CVE-2026-47893,CVE-2026-59280,CVE-2026-47890,CVE-2026-47891
             affects Spring framework 6.2.19 which is the latest release.
         </notes>
         <packageUrl regex="true">^pkg:maven/org\.springframework/spring-context@6\.2\.19$</packageUrl>
@@ -58,10 +62,12 @@
         <cve>CVE-2026-59283</cve>
         <cve>CVE-2026-47893</cve>
         <cve>CVE-2026-59280</cve>
+        <cve>CVE-2026-47890</cve>
+        <cve>CVE-2026-47891</cve>
     </suppress>
     <suppress until="2026-10-31Z">
         <notes>
-            CVE-2026-59313,CVE-2026-59314,CVE-2026-47892,CVE-2026-59283,CVE-2026-47893,CVE-2026-59280
+            CVE-2026-59313,CVE-2026-59314,CVE-2026-47892,CVE-2026-59283,CVE-2026-47893,CVE-2026-59280,CVE-2026-47890,CVE-2026-47891
             affects Spring framework 6.2.19 which is the latest release.
         </notes>
         <packageUrl regex="true">^pkg:maven/org\.springframework/spring-core@6\.2\.19$</packageUrl>
@@ -71,10 +77,12 @@
         <cve>CVE-2026-59283</cve>
         <cve>CVE-2026-47893</cve>
         <cve>CVE-2026-59280</cve>
+        <cve>CVE-2026-47890</cve>
+        <cve>CVE-2026-47891</cve>
     </suppress>
     <suppress until="2026-10-31Z">
         <notes>
-            CVE-2026-59313,CVE-2026-59314,CVE-2026-47892,CVE-2026-59283,CVE-2026-47893,CVE-2026-59280
+            CVE-2026-59313,CVE-2026-59314,CVE-2026-47892,CVE-2026-59283,CVE-2026-47893,CVE-2026-59280,CVE-2026-47890,CVE-2026-47891
             affects Spring framework 6.2.19 which is the latest release.
         </notes>
         <packageUrl regex="true">^pkg:maven/org\.springframework/spring-expression@6\.2\.19$</packageUrl>
@@ -84,10 +92,12 @@
         <cve>CVE-2026-59283</cve>
         <cve>CVE-2026-47893</cve>
         <cve>CVE-2026-59280</cve>
+        <cve>CVE-2026-47890</cve>
+        <cve>CVE-2026-47891</cve>
     </suppress>
     <suppress until="2026-10-31Z">
         <notes>
-            CVE-2026-59313,CVE-2026-59314,CVE-2026-47892,CVE-2026-59283,CVE-2026-47893,CVE-2026-59280
+            CVE-2026-59313,CVE-2026-59314,CVE-2026-47892,CVE-2026-59283,CVE-2026-47893,CVE-2026-59280,CVE-2026-47890,CVE-2026-47891
             affects Spring framework 6.2.19 which is the latest release.
         </notes>
         <packageUrl regex="true">^pkg:maven/org\.springframework/spring-jcl@6\.2\.19$</packageUrl>
@@ -97,10 +107,12 @@
         <cve>CVE-2026-59283</cve>
         <cve>CVE-2026-47893</cve>
         <cve>CVE-2026-59280</cve>
+        <cve>CVE-2026-47890</cve>
+        <cve>CVE-2026-47891</cve>
     </suppress>
     <suppress until="2026-10-31Z">
         <notes>
-            CVE-2026-59313,CVE-2026-59314,CVE-2026-47892,CVE-2026-59283,CVE-2026-47893,CVE-2026-59280
+            CVE-2026-59313,CVE-2026-59314,CVE-2026-47892,CVE-2026-59283,CVE-2026-47893,CVE-2026-59280,CVE-2026-47890,CVE-2026-47891
             affects Spring framework 6.2.19 which is the latest release.
         </notes>
         <packageUrl regex="true">^pkg:maven/org\.springframework/spring-web@6\.2\.19$</packageUrl>
@@ -110,6 +122,8 @@
         <cve>CVE-2026-59283</cve>
         <cve>CVE-2026-47893</cve>
         <cve>CVE-2026-59280</cve>
+        <cve>CVE-2026-47890</cve>
+        <cve>CVE-2026-47891</cve>
     </suppress>
     <suppress until="2026-10-31Z">
         <notes>
