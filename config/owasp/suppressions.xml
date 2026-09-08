@@ -169,9 +169,12 @@
     </suppress>
     <suppress until="2026-10-31Z">
         <notes>
-            CVE-2026-59270 affects Spring framework security 6.5.11 which is the latest release.
+            CVE-2026-59270, CVE-2026-47841 and CVE-2026-47842 affect Spring framework security 6.5.11.
+            There is no 6.*.* update available.
         </notes>
         <packageUrl regex="true">^pkg:maven/org\.springframework.security/spring-security-crypto@6\.5\.11$</packageUrl>
+        <cve>CVE-2026-47841</cve>
+        <cve>CVE-2026-47842</cve>
         <cve>CVE-2026-59270</cve>
         <cve>CVE-2026-59276</cve>
     </suppress>
