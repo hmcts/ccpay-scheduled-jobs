@@ -22,6 +22,23 @@
     </suppress>
     <suppress until="2026-10-31Z">
         <notes>
+            Spring Framework 6.2.19 is the latest resolvable OSS 6.2.x version from the configured repositories.
+            Spring Framework 6.2.20 contains these fixes, but is Enterprise Support Only and is not available from Maven Central.
+            Remove this suppression when the application is upgraded to Spring Boot 4.x / Spring Framework 7.x, or when an enterprise repository is configured.
+        </notes>
+        <cpe>cpe:2.3:a:pivotal_software:spring_framework:6.2.19:*:*:*:*:*:*:*</cpe>
+        <cpe>cpe:2.3:a:springsource:spring_framework:6.2.19:*:*:*:*:*:*:*</cpe>
+        <cpe>cpe:2.3:a:vmware:spring_framework:6.2.19:*:*:*:*:*:*:*</cpe>
+        <cve>CVE-2026-47883</cve>
+        <cve>CVE-2026-47884</cve>
+        <cve>CVE-2026-47885</cve>
+        <cve>CVE-2026-47886</cve>
+        <cve>CVE-2026-47887</cve>
+        <cve>CVE-2026-47888</cve>
+        <cve>CVE-2026-47889</cve>
+    </suppress>
+    <suppress until="2026-10-31Z">
+        <notes>
             CVE-2026-59313,CVE-2026-59314,CVE-2026-47892,CVE-2026-59283,CVE-2026-47893,CVE-2026-59280,CVE-2026-47890,CVE-2026-47891,
             CVE-2026-59282, CVE-2026-59281
             affects Spring framework 6.2.19 which is the latest release.
