@@ -1,5 +1,5 @@
 # renovate: datasource=github-releases depName=microsoft/ApplicationInsights-Java
-ARG APP_INSIGHTS_AGENT_VERSION=3.7.9
+ARG APP_INSIGHTS_AGENT_VERSION=3.7.10
 ARG BASE_REGISTRY=hmctsprod.azurecr.io
 FROM ${BASE_REGISTRY}/base/java:25-distroless
 
