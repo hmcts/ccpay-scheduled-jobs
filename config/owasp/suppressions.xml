@@ -20,7 +20,7 @@
         <cve>CVE-2026-54399</cve>
         <cve>CVE-2026-54428</cve>
     </suppress>
-    <suppress until="2026-10-31Z">
+    <suppress until="2026-11-30Z">
         <notes>
             Spring Framework 6.2.19 is the latest resolvable OSS 6.2.x version from the configured repositories.
             Spring Framework 6.2.20 contains these fixes, but is Enterprise Support Only and is not available from Maven Central.
@@ -37,7 +37,7 @@
         <cve>CVE-2026-47888</cve>
         <cve>CVE-2026-47889</cve>
     </suppress>
-    <suppress until="2026-10-31Z">
+    <suppress until="2026-11-30Z">
         <notes>
             CVE-2026-59313,CVE-2026-59314,CVE-2026-47892,CVE-2026-59283,CVE-2026-47893,CVE-2026-59280,CVE-2026-47890,CVE-2026-47891,
             CVE-2026-59282, CVE-2026-59281
@@ -55,7 +55,7 @@
         <cve>CVE-2026-59282</cve>
         <cve>CVE-2026-59281</cve>
     </suppress>
-    <suppress until="2026-10-31Z">
+    <suppress until="2026-11-30Z">
         <notes>
             CVE-2026-59313,CVE-2026-59314,CVE-2026-47892,CVE-2026-59283,CVE-2026-47893,CVE-2026-59280,CVE-2026-47890,CVE-2026-47891,
             CVE-2026-59282, CVE-2026-59281
@@ -73,7 +73,7 @@
         <cve>CVE-2026-59282</cve>
         <cve>CVE-2026-59281</cve>
     </suppress>
-    <suppress until="2026-10-31Z">
+    <suppress until="2026-11-30Z">
         <notes>
             CVE-2026-59313,CVE-2026-59314,CVE-2026-47892,CVE-2026-59283,CVE-2026-47893,CVE-2026-59280,CVE-2026-47890,CVE-2026-47891,
             CVE-2026-59282, CVE-2026-59281
@@ -91,7 +91,7 @@
         <cve>CVE-2026-59282</cve>
         <cve>CVE-2026-59281</cve>
     </suppress>
-    <suppress until="2026-10-31Z">
+    <suppress until="2026-11-30Z">
         <notes>
             CVE-2026-59313,CVE-2026-59314,CVE-2026-47892,CVE-2026-59283,CVE-2026-47893,CVE-2026-59280,CVE-2026-47890,CVE-2026-47891,
             CVE-2026-59282, CVE-2026-59281
@@ -109,7 +109,7 @@
         <cve>CVE-2026-59282</cve>
         <cve>CVE-2026-59281</cve>
     </suppress>
-    <suppress until="2026-10-31Z">
+    <suppress until="2026-11-30Z">
         <notes>
             CVE-2026-59313,CVE-2026-59314,CVE-2026-47892,CVE-2026-59283,CVE-2026-47893,CVE-2026-59280,CVE-2026-47890,CVE-2026-47891,
             CVE-2026-59282, CVE-2026-59281
@@ -127,7 +127,7 @@
         <cve>CVE-2026-59282</cve>
         <cve>CVE-2026-59281</cve>
     </suppress>
-    <suppress until="2026-10-31Z">
+    <suppress until="2026-11-30Z">
         <notes>
             CVE-2026-59313,CVE-2026-59314,CVE-2026-47892,CVE-2026-59283,CVE-2026-47893,CVE-2026-59280,CVE-2026-47890,CVE-2026-47891,
             CVE-2026-59282, CVE-2026-59281
@@ -145,7 +145,7 @@
         <cve>CVE-2026-59282</cve>
         <cve>CVE-2026-59281</cve>
     </suppress>
-    <suppress until="2026-10-31Z">
+    <suppress until="2026-11-30Z">
         <notes>
             CVE-2026-59313,CVE-2026-59314,CVE-2026-47892,CVE-2026-59283,CVE-2026-47893,CVE-2026-59280,CVE-2026-47890,CVE-2026-47891,
             CVE-2026-59282, CVE-2026-59281
@@ -163,28 +163,28 @@
         <cve>CVE-2026-59282</cve>
         <cve>CVE-2026-59281</cve>
     </suppress>
-    <suppress until="2026-10-31Z">
+    <suppress until="2026-11-30Z">
         <notes>
             CVE-2026-59284 affects Spring framework cloud 4.3.3 which is the latest release.
         </notes>
         <packageUrl regex="true">^pkg:maven/org\.springframework.cloud/spring-cloud-commons@4\.3\.3$</packageUrl>
         <cve>CVE-2026-59284</cve>
     </suppress>
-    <suppress until="2026-10-31Z">
+    <suppress until="2026-11-30Z">
         <notes>
             CVE-2026-59284 affects Spring framework cloud 4.3.3 which is the latest release.
         </notes>
         <packageUrl regex="true">^pkg:maven/org\.springframework.cloud/spring-cloud-context@4\.3\.3$</packageUrl>
         <cve>CVE-2026-59284</cve>
     </suppress>
-    <suppress until="2026-10-31Z">
+    <suppress until="2026-11-30Z">
         <notes>
             CVE-2026-59284 affects Spring framework cloud 4.3.3 which is the latest release.
         </notes>
         <packageUrl regex="true">^pkg:maven/org\.springframework.cloud/spring-cloud-starter@4\.3\.3$</packageUrl>
         <cve>CVE-2026-59284</cve>
     </suppress>
-    <suppress until="2026-10-31Z">
+    <suppress until="2026-11-30Z">
         <notes>
             CVE-2026-59270, CVE-2026-47841 and CVE-2026-47842 affect Spring framework security 6.5.11.
             There is no 6.*.* update available.
